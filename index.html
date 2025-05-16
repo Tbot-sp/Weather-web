@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" />
+  <title>Weather App</title>
+</head>
+
+<body>
+  <main>
+    <div id="weather-wrapper">
+
+      <h1>Weather App</h1>
+      <div id="weather-search">
+        <input id="search" type="text" placeholder="Search by city" />
+        <input id="submit" type="submit" onclick="fetchWeather()" value="Search" />
+      </div>
+
+      <div id="weather_photo_display" style="display:none">
+          <div id="weather-data" ></div>
+          <div id="weather-photo"></div>
+      </div>
+
+      </div> 
+    </div>
+  </main>
+  <script src="java.js"></script>
+
+</body>
+</html>
