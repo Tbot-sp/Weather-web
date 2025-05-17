@@ -65,7 +65,7 @@ h1 {
 }
 
 #weather-data p {
-  margin-bottom: 20px; /* 增加底部间距 */
+  margin-bottom: 20px; 
 }
 
 #weather-data > img {
@@ -74,7 +74,6 @@ h1 {
 }
 
 #weather_photo_display {
-
   background-color: rgba(255, 255, 255, 0.85);
   border-radius: 5px;
   padding: 1.5em;
