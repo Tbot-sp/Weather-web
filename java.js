@@ -86,7 +86,9 @@ async function fetchWeather() {
 
   // https://unsplash.com/documentation#hotlinking
   async function getPhoto(response_json) {
+    
     api_key = ' ';
+    
     const unsplash_url = `https://api.unsplash.com/photos/random?client_id=${api_key}&query=${response_json}&orientation=landscape` //originally just weather_search not response_json
     //'https://api.unsplash.com/photos/?client_id=fOfkt4BRnDDiqqd7KBAvgacWXA9x_-CMXP5H2sTqEIA'
     
@@ -97,7 +99,7 @@ async function fetchWeather() {
       weather_photo.innerHTML = `
       <h1>Api response go wrong for pic!</h1>
       `
-    } else{
+    } else {
       photo = await photo_response.json()
       console.log(photo)
       //<div id="weather-photo"></div>
@@ -106,11 +108,10 @@ async function fetchWeather() {
         <img src="${photo.urls.full}" width="300" />
       </div>
       `
-    }
+  }
 
 
 }
-
   const LonAndLat = await getLonAndLat();
   response_json_name = await getweatherData(LonAndLat.lon, LonAndLat.lat)
   console.log(response_json_name)
